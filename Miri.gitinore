@@ -1,0 +1,18 @@
+# Sistema operativo macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Sistema operativo Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Configuración del editor Visual Studio Code
+.vscode/
+
+# Archivos temporales o de logs
+*.log
+*.tmp
