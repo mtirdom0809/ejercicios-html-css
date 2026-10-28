@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Club Spider-Man</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Cabecera con título y menú de navegación -->
+    <header id="cabecera">
+        <h1>Doctor Octopus</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#misiones">Misiones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido al sitio oficial del fan club.</p>
+        </section>
+
+        <!-- Sección de Misiones (con tabla e imagen) -->
+        <section id="misiones">
+            <h2>Misiones</h2>
+            <p>Estas son las próximas misiones del héroe arácnido de Nueva York. ¡No te pierdas ninguna!</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Misión</th>
+                        <th>Villano</th>
+                        <th>Peligrosidad</th>
+                        <th>Día</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salvar a Mary Jane</td>
+                        <td>Duende Verde</td>
+                        <td>Alta</td>
+                        <td>Lunes</td>
+                    </tr>
+                    <tr>
+                        <td>Detener a Venom</td>
+                        <td>Venom</td>
+                        <td>Muy Alta</td>
+                        <td>Miércoles</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Imagen con ruta relativa y atributo alt -->
+            <img src="img/1223940.jpg" alt="Spider-Man" width="300" height="200">
+
+            <!-- Enlace externo a Marvel -->
+            <p>
+                <a href="https://www.marvel.com" target="_blank">Más información sobre Spiderman</a>
+            </p>
+        </section>
+
+        <!-- Sección de Contacto (con formulario) -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="villano">Villano favorito:</label>
+                <select id="villano" name="villano">
+                    <option value="octopus">Doctor Octopus</option>
+                    <option value="duende">Duende Verde</option>
+                    <option value="venom">Venom</option>
+                </select>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios"></textarea>
+
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>2026 Fan club de Spider-Man. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

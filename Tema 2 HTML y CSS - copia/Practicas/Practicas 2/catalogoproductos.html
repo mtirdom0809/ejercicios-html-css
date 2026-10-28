@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Productos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #7b325f;
+            color: white;
+        }
+        .agotado {
+            background-color: #fadbd8;
+            color: #922b21;
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Tienda de Informática</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Disponibilidad</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Teclado</td>
+                <td>25,00 €</td>
+                <td>15</td>
+                <td>Disponible</td>
+                <td><a href="https://www.pccomponentes.com/categorias/teclados" target="_blank">&lt;&lt;Ver producto</a></td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>Ratón</td>
+                <td>12,00 €</td>
+                <td>30</td>
+                <td>Disponible</td>
+                <td><a href="https://www.pccomponentes.com/categorias/ratones" target="_blank">&lt;&lt;Ver producto</a></td>
+            </tr>
+            <tr class="agotado">
+                <td>P003</td>
+                <td>Monitor</td>
+                <td>180,00 €</td>
+                <td>0</td>
+                <td>Agotado</td>
+                <td><a href="https://www.pccomponentes.com/categorias/monitores-pc" target="_blank">&lt;&lt;Ver producto</a></td>
+            </tr>
+            <tr>
+                <td>P004</td>
+                <td>Auriculares</td>
+                <td>35,00 €</td>
+                <td>8</td>
+                <td>Disponible</td>
+                <td><a href="https://www.pccomponentes.com/categorias/auriculares" target="_blank">&lt;&lt;Ver producto</a></td>
+            </tr>
+            <tr>
+                <td>P005</td>
+                <td>Webcam</td>
+                <td>45,00 €</td>
+                <td>3</td>
+                <td>Disponible</td>
+                <td><a href="https://www.pccomponentes.com/categorias/webcam" target="_blank">&lt;&lt;Ver producto</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

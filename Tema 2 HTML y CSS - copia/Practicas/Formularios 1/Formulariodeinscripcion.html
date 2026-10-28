@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de estudiantes</title>
+</head>
+
+<body>
+    <h1>Registro de estudiantes</h1>
+    <form action="Incripcion.html" method="get" target="_blank">
+        <p>
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required>
+        </p>
+        <p>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </p>
+        <p>
+            <label for="fnacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fnacimiento" name="fnacimiento" required>
+        </p>
+        <p>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ejemplo@gmail.com" required>
+        </p>
+        <p>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="9712169979" required>
+        </p>
+        <p>
+            <label for="ciclo">Ciclo formativo:</label>
+            <select id="ciclo" name="ciclo" required>
+                <option value="">Selecciona un ciclo</option>
+                <option value="SMR">SMR</option>
+                <option value="DAM">DAM</option>
+                <option value="DAW">DAW</option>
+            </select>
+        </p>
+        <p>
+            Turno preferido:
+            <label><input type="radio" name="turno" value="Mañana" required> Mañana</label>
+            <label><input type="radio" name="turno" value="Tarde"> Tarde</label>
+        </p>
+        <p>
+            Modalidad:
+            <label><input type="radio" name="modalidad" value="Presencial" required> Presencial</label>
+            <label><input type="radio" name="modalidad" value="Semipresencial"> Semipresencial</label>
+            <label><input type="radio" name="modalidad" value="Online"> Online</label>
+        </p>
+        <p>
+            <label><input type="checkbox" name="privacidad" required> Acepto la política de privacidad</label>
+        </p>
+        <p>
+            <button type="submit">Enviar y redirigir</button>
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de libros - Biblioteca</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        .pendiente { background-color: #ffffcc; }
+        .confirmada { background-color: #ccffcc; }
+        .entregada { background-color: #ccccff; }
+    </style>
+</head>
+<body>
+    <h1>Reserva de libros</h1>
+
+    <section>
+        <form action="#" method="get">
+            <label for="buscar_socio">Buscar reserva por nº de socio:</label>
+            <input type="search" id="buscar_socio" name="buscar_socio">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <form action="reserva.html" method="get" target="_blank">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+                <label for="usuario">Nombre del usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </p>
+            <p>
+                <label for="num_socio">Número de socio:</label>
+                <input type="text" id="num_socio" name="num_socio" required>
+            </p>
+            <p>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del préstamo</legend>
+            <p>
+                <label for="titulo">Título del libro:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </p>
+            <p>
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required>
+            </p>
+            <p>
+                <label for="f_reserva">Fecha de reserva:</label>
+                <input type="date" id="f_reserva" name="f_reserva" required>
+            </p>
+            <p>
+                <label for="f_recogida">Fecha prevista de recogida:</label>
+                <input type="date" id="f_recogida" name="f_recogida" required>
+            </p>
+            <p>
+                Tipo de préstamo:
+                <label><input type="radio" name="prestamo" value="sala" required> Sala</label>
+                <label><input type="radio" name="prestamo" value="domicilio"> Domicilio</label>
+            </p>
+            <p>
+                <label for="comentarios">Comentarios adicionales:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Enviar reserva</button>
+            <button type="reset">Limpiar campos</button>
+        </p>
+    </form>
+
+    <h2>Reservas registradas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>N.º reserva</th>
+                <th>Usuario</th>
+                <th>Libro</th>
+                <th>Fecha de reserva</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ana López</td>
+                <td>El principito</td>
+                <td>14/10/2026</td>
+                <td class="pendiente">Pendiente</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pablo Ruiz</td>
+                <td>La sombra del viento</td>
+                <td>13/10/2026</td>
+                <td class="confirmada">Confirmada</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Marta Díaz</td>
+                <td>Don Quijote</td>
+                <td>12/10/2026</td>
+                <td class="entregada">Entregada</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Luis Martín</td>
+                <td>Cien años de soledad</td>
+                <td>11/10/2026</td>
+                <td class="pendiente">Pendiente</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
